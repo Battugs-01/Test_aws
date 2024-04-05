@@ -1,0 +1,42 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        gray: {
+          100: "#f4f4f4",
+          400: "#bfbfbf",
+          600: "#8c7d6a",
+          700: "#575c67",
+          900: "#0a1321",
+          "800_19": "#38383819",
+          "100_7f": "#f4f4f47f",
+          "100_48": "#f4f4f448",
+          "100_33": "#f4f4f433",
+          "100_19": "#f4f4f419",
+        },
+        blue_gray: { 50: "#eaecf0" },
+        orange: { "100_19": "#ffd9a119", A200: "#f19e38", A200_cc: "#f19e38cc" },
+        yellow: { 50: "#fffbe6" },
+        deep_purple: { 400: "#9254de" },
+        blue: { 400: "#40a9ff" },
+        red_A200: "#ff4d4f",
+      },
+      boxShadow: {},
+      fontFamily: { spacegrotesk: "Space Grotesk", rockwell: "Rockwell", montserrat: "Montserrat", rubik: "Rubik" },
+      opacity: { 0.3: 0.3, 0.15: 0.15 },
+      backgroundImage: {
+        gradient: "radial-gradient(179deg, #0c132233,#03344e33)",
+        gradient1: "radial-gradient(180deg, #0f182c33,#0c6deb33,#9dcaff33)",
+        gradient2: "linear-gradient(90deg, #f4f4f433,#ffffff,#ffffff33)",
+        gradient3: "linear-gradient(90deg, #9254de,#e7d3ffaa)",
+        gradient4: "linear-gradient(90deg, #f19e38,#ffdaad)",
+        gradient5: "linear-gradient(90deg, #40a9ff,#8eccff)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
